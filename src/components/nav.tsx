@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { FaBars } from "react-icons/fa";
+import image from "../../public/logo.png"
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -39,7 +40,7 @@ const Navbar = () => {
         {/* Logo */}
         <div className="flex-shrink-0">
           <Image
-            src="/logo.png"
+            src={image}
             className=""
             width={140}
             height={70}
